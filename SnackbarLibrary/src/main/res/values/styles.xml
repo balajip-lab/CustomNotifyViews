@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="SnackbarBuilder">
+        <item name="customSnackbarBuilder_actionTxtColor">?colorAccent</item>
+        <item name="customSnackbarBuilder_msgTxtColor">@color/customsnackbarbuilder_default_msg</item>
+        <item name="customSnackbarBuilder_duration">longTime</item>
+        <item name="customSnackbarBuilder_iconMargin">@dimen/customsnackbarbuilder_icon_margin_default</item>
+        <item name="customSnackbarBuilder_actionAllCaps">true</item>
+    </style>
+
+    <style name="TestSnackbarBuilder_AppTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar"
+        tools:ignore="UnusedResources">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <style name="TestSnackbarBuilder_CustomTheme"
+        tools:ignore="UnusedResources">
+        <item name="customSnackbarBuilderStyle">@style/TestSnackbarBuilderStyle</item>
+    </style>
+
+    <style name="TestSnackbarBuilderStyle"
+        parent="SnackbarBuilder"
+        tools:ignore="UnusedResources">
+        <item name="customSnackbarBuilder_actionTxtColor">#454545</item>
+        <item name="customSnackbarBuilder_msgTxtColor">#987654</item>
+        <item name="customSnackbarBuilder_parentViewId">@id/customsnackbarbuilder_icon</item>
+        <item name="customSnackbarBuilder_duration">indefinite</item>
+        <item name="customSnackbarBuilder_bgColor">#999999</item>
+        <item name="customSnackbarBuilder_iconMargin">16dp</item>
+        <item name="customSnackbarBuilder_actionAllCaps">false</item>
+    </style>
+
+</resources>

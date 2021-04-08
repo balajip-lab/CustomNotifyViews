@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customSnackbarBuilderStyle" format="reference"/>
+    <declare-styleable name="CustomSnackbarBuilderStyle">
+        <attr name="customSnackbarBuilder_msgTxtColor" format="color"/>
+        <attr name="customSnackbarBuilder_actionTxtColor" format="color"/>
+        <attr name="customSnackbarBuilder_bgColor" format="color"/>
+        <attr name="customSnackbarBuilder_parentViewId" format="reference"/>
+        <attr name="customSnackbarBuilder_duration" format="integer">
+            <enum name="longTime" value="0"/>
+            <enum name="shortTime" value="-1"/>
+            <enum name="indefinite" value="-2"/>
+        </attr>
+        <attr name="customSnackbarBuilder_iconMargin" format="dimension"/>
+        <attr name="customSnackbarBuilder_actionAllCaps" format="boolean"/>
+    </declare-styleable>
+</resources>
